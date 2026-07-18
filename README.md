@@ -1,36 +1,122 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💰 AI Personal Finance Analyzer
 
-## Getting Started
+An AI-powered personal finance web application that helps users upload bank transactions, visualize spending patterns, monitor budgets, and receive intelligent financial insights.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📌 Project Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The AI Personal Finance Analyzer is built to simplify personal money management.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Users can upload transaction data in CSV format and view:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Dashboard with financial summary
+- Transaction history
+- Spending analytics
+- Budget analysis
+- Expense forecasting
+- AI-generated financial insights
 
-## Learn More
+This project demonstrates full-stack web development using modern technologies along with AI-based finance concepts.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✨ Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 📊 Dashboard
 
-## Deploy on Vercel
+- Total Income
+- Total Expenses
+- Current Balance
+- Savings
+- Financial Health Score
+- Monthly Cash Flow Chart
+- Spending Category Chart
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 📁 Transaction Upload
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Upload CSV bank statements
+- Parse transaction data
+- Store transactions securely
+
+### 💳 Transactions
+
+- View uploaded transactions
+- Search transactions
+- Income & Expense categorization
+
+### 🤖 AI Insights
+
+- Spending analysis
+- Personalized financial recommendations
+- Financial health score
+
+### 📈 Forecast
+
+- Expense prediction
+- Savings estimation
+- Monthly forecast chart
+
+### 💰 Budget Analysis
+
+- Budget tracking
+- Category-wise spending
+- Budget status
+
+### 🔒 Authentication
+
+- User Login
+- User Registration
+- Secure authentication using Supabase
+
+---
+
+## 🛠 Tech Stack
+
+Frontend
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+
+Backend
+
+- Supabase
+
+Charts
+
+- Recharts
+
+Database
+
+- PostgreSQL (Supabase)
+
+Authentication
+
+- Supabase Auth
+
+---
+
+## 📸 Screenshots
+
+(Add screenshots here after deployment.)
+
+---
+
+## 🚀 Future Improvements
+
+- AI Chat Assistant
+- PDF Report Generation
+- Fraud Detection using Machine Learning
+- Better Forecasting Models
+- Real-time Notifications
+- Mobile Responsive UI Improvements
+
+---
+
+## 👩‍💻 Author
+
+**Shruti Bhintade**
+
+Built as an academic project for learning Full Stack Development and AI-based Personal Finance Management.
