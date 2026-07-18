@@ -1,5 +1,5 @@
 "use client";
-
+import type { Transaction } from "@/context/TransactionsContext";
 import {
   Card,
   CardContent,
@@ -7,14 +7,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-interface Transaction {
-  id: string;
-  date: string;
-  description: string;
-  category: string;
-  amount: number;
-  type: "income" | "expense";
-}
 
 interface FraudAlertsProps {
   transactions: Transaction[];

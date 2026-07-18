@@ -138,36 +138,30 @@ const {
         <StatCard
           title="Income"
           value={`₹${income.toLocaleString()}`}
-          change="+0%"
-          positive
         />
 
         <StatCard
           title="Expenses"
           value={`₹${expenses.toLocaleString()}`}
-          change="0%"
-          positive={false}
+      
         />
 
         <StatCard
           title="Balance"
           value={`₹${balance.toLocaleString()}`}
-          change="+0%"
-          positive={balance >= 0}
+        
         />
 
         <StatCard
           title="Savings"
           value={`₹${savings.toLocaleString()}`}
-          change="+0%"
-          positive
+    
         />
 
         <StatCard
           title="Transactions"
           value={totalTransactions}
-          change={`${totalTransactions} Records`}
-          positive
+          
         />
 
       </section>
@@ -249,7 +243,7 @@ const {
       {/* ================= Recent Transactions ================= */}
 
       <section>
-        <RecentTransactions transactions={transactions} />
+        <RecentTransactions />
       </section>
 
     </main>

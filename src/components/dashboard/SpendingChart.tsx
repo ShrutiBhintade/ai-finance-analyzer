@@ -39,11 +39,6 @@ const COLORS = [
 export default function SpendingChart({
   data,
 }: SpendingChartProps) {
-  const total = data.reduce(
-    (sum, item) => sum + item.amount,
-    0
-  );
-
   return (
     <Card className="w-full">
       <CardHeader>
@@ -63,9 +58,12 @@ export default function SpendingChart({
                 innerRadius={65}
                 outerRadius={105}
                 paddingAngle={3}
-                label={({ category, percent }) =>
-                  `${category} ${((percent ?? 0) * 100).toFixed(1)}%`
-                }
+                label={(props) => {
+                  const category = String(props.name ?? "");
+                  const percent = Number(props.percent ?? 0);
+
+                  return `${category} ${(percent * 100).toFixed(1)}%`;
+                }}
               >
                 {data.map((_, index) => (
                   <Cell
@@ -76,8 +74,8 @@ export default function SpendingChart({
               </Pie>
 
               <Tooltip
-                formatter={(value: number) => [
-                  `₹${Number(value).toLocaleString()}`,
+                formatter={(value) => [
+                  `₹${Number(value ?? 0).toLocaleString()}`,
                   "Amount",
                 ]}
               />

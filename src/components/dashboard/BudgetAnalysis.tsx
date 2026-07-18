@@ -2,12 +2,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
-
-interface Transaction {
-  category: string;
-  amount: number;
-  type: "income" | "expense";
-}
+import type { Transaction } from "@/context/TransactionsContext";
 
 interface BudgetAnalysisProps {
   transactions: Transaction[];

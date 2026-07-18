@@ -1,7 +1,7 @@
-import { NormalizedTransaction } from "./normalizeTransactions";
+import type { Transaction } from "@/context/TransactionsContext";
 
 export function generateFinancialReport(
-  transactions: NormalizedTransaction[]
+  transactions: Transaction[]
 ) {
   const income = transactions
     .filter((t) => t.type === "income")

@@ -5,7 +5,7 @@ import { useState } from "react";
 import Papa from "papaparse";
 import { normalizeTransactions } from "@/lib/normalizeTransactions";
 import { useTransactions } from "@/context/TransactionsContext";
-import { addTransaction } from "@/lib/addTransaction";
+import { addTransaction } from "@/lib/addTransactions";
 export default function UploadPage() {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [uploadStatus, setUploadStatus] = useState("");

@@ -72,10 +72,10 @@ export default function CashFlowChart({
               />
 
               <Tooltip
-                formatter={(value: number, name) => [
-                  `₹${Number(value).toLocaleString()}`,
-                  name === "income" ? "Income" : "Expense",
-                ]}
+                formatter={(value, name) => [
+  `₹${Number(value ?? 0).toLocaleString()}`,
+  name === "income" ? "Income" : "Expense",
+]}
               />
 
               <Legend />

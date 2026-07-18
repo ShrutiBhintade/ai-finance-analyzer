@@ -1,12 +1,7 @@
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-
-interface Transaction {
-  category: string;
-  amount: number;
-  type: string;
-}
+import type { Transaction } from "@/context/TransactionsContext";
 
 interface Props {
   transactions: Transaction[];
