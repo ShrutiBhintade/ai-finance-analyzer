@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AI Personal Finance Analyzer",
-  description: "Your intelligent personal finance companion — powered by AI.",
+  title: "FinPilot AI",
+  description: "Your Autonomous Financial Co-Pilot powered by Gemini AI",
 };
 
 export default function RootLayout({

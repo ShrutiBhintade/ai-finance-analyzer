@@ -18,7 +18,7 @@ export default function FinanceAssistant() {
   const [messages, setMessages] = useState<Message[]>([
     {
       sender: "ai",
-      text: "👋 Hello! I'm your AI Finance Assistant.\n\nAsk me anything about your uploaded financial data.",
+      text: "👋 Hello! I'm your FinPilot Copilot.\n\nAsk me anything about your uploaded financial data.",
     },
   ]);
 
@@ -90,7 +90,7 @@ export default function FinanceAssistant() {
 
       <div className="border-b px-6 py-5">
         <h2 className="text-2xl font-bold">
-          🤖 AI Finance Assistant
+          🤖 FinPilot Copilot
         </h2>
 
         <p className="text-muted-foreground mt-1">
